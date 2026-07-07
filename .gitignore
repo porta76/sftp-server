@@ -1,0 +1,17 @@
+# Sensitive files
+host_key_rsa
+sftp_server.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Captures
+*.pcapng
+*.pcap
+
+# User directories
+sftp_root/
+
+# Backups
+.backup/
