@@ -1,0 +1,120 @@
+2026-07-06 20:36:31,770 [INFO] MainThread: Generating new RSA host key...
+2026-07-06 20:36:31,806 [INFO] MainThread: Saved host key to host_key_rsa
+2026-07-06 20:36:31,807 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 20:36:31,808 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 20:37:39,863 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 20:37:39,864 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 20:37:39,865 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 20:45:35,641 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 20:45:35,643 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 20:45:35,643 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 20:45:44,230 [INFO] MainThread: Incoming connection from ('127.0.0.1', 25434)
+2026-07-06 20:45:44,233 [INFO] Thread-2: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 20:45:44,251 [INFO] Thread-2: User 'admin' authenticated successfully
+2026-07-06 20:45:44,252 [INFO] Thread-2: Auth granted (password).
+2026-07-06 20:45:44,254 [INFO] Thread-4 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 20:45:44,306 [INFO] Thread-1 (handle_client): Connection closed from ('127.0.0.1', 25434)
+2026-07-06 21:09:35,416 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 21:09:35,418 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 21:09:35,419 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 21:11:57,419 [INFO] MainThread: Incoming connection from ('127.0.0.1', 14337)
+2026-07-06 21:11:57,422 [INFO] Thread-2: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 21:11:57,431 [INFO] Thread-2: User 'admin' authenticated successfully
+2026-07-06 21:11:57,432 [INFO] Thread-2: Auth granted (password).
+2026-07-06 21:11:57,434 [INFO] Thread-4 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:11:57,484 [INFO] Thread-1 (handle_client): Connection closed from ('127.0.0.1', 14337)
+2026-07-06 21:13:02,536 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 21:13:02,537 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 21:13:02,537 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 21:13:09,280 [INFO] MainThread: Incoming connection from ('127.0.0.1', 5571)
+2026-07-06 21:13:09,282 [INFO] Thread-2: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 21:13:09,288 [INFO] Thread-2: User 'admin' authenticated successfully
+2026-07-06 21:13:09,288 [INFO] Thread-2: Auth granted (password).
+2026-07-06 21:13:09,291 [INFO] Thread-4 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:13:09,292 [ERROR] Thread-4 (_run): Exception in subsystem handler for "sftp": 'SimpleSFTPServerInterface' object has no attribute 'server'
+2026-07-06 21:13:09,336 [ERROR] Thread-4 (_run): Traceback (most recent call last):
+2026-07-06 21:13:09,336 [ERROR] Thread-4 (_run):   File "C:\Eget\PythonProjects\sftp-server\env\Lib\site-packages\paramiko\server.py", line 611, in _run
+2026-07-06 21:13:09,336 [ERROR] Thread-4 (_run):     self.start_subsystem(self.__name, self.__transport, self.__channel)
+2026-07-06 21:13:09,337 [ERROR] Thread-4 (_run):     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-06 21:13:09,337 [ERROR] Thread-4 (_run):   File "C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_server.py", line 184, in start_subsystem
+2026-07-06 21:13:09,337 [ERROR] Thread-4 (_run):     super().start_subsystem(name, transport, channel)
+2026-07-06 21:13:09,337 [ERROR] Thread-4 (_run):     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-06 21:13:09,337 [ERROR] Thread-4 (_run):   File "C:\Eget\PythonProjects\sftp-server\env\Lib\site-packages\paramiko\sftp_server.py", line 138, in start_subsystem
+2026-07-06 21:13:09,337 [ERROR] Thread-4 (_run):     self.server.session_started()
+2026-07-06 21:13:09,338 [ERROR] Thread-4 (_run):     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-07-06 21:13:09,338 [ERROR] Thread-4 (_run):   File "C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_server.py", line 56, in session_started
+2026-07-06 21:13:09,338 [ERROR] Thread-4 (_run):     server = self.server
+2026-07-06 21:13:09,339 [ERROR] Thread-4 (_run):              ^^^^^^^^^^^
+2026-07-06 21:13:09,339 [ERROR] Thread-4 (_run): AttributeError: 'SimpleSFTPServerInterface' object has no attribute 'server'
+2026-07-06 21:13:09,339 [ERROR] Thread-4 (_run): 
+2026-07-06 21:13:09,378 [INFO] Thread-1 (handle_client): Connection closed from ('127.0.0.1', 5571)
+2026-07-06 21:21:15,118 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 21:21:15,120 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 21:21:15,120 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 21:21:21,801 [INFO] MainThread: Incoming connection from ('127.0.0.1', 25696)
+2026-07-06 21:21:21,803 [INFO] Thread-2: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 21:21:21,810 [INFO] Thread-2: User 'admin' authenticated successfully
+2026-07-06 21:21:21,810 [INFO] Thread-2: Auth granted (password).
+2026-07-06 21:21:21,812 [INFO] Thread-4 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:21:21,813 [INFO] Thread-4 (_run): SFTP session started, home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:21:21,817 [INFO] Thread-1 (handle_client): Connection closed from ('127.0.0.1', 25696)
+2026-07-06 21:21:42,544 [INFO] MainThread: Incoming connection from ('127.0.0.1', 17562)
+2026-07-06 21:21:42,546 [INFO] Thread-6: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 21:21:42,553 [INFO] Thread-6: User 'admin' authenticated successfully
+2026-07-06 21:21:42,554 [INFO] Thread-6: Auth granted (password).
+2026-07-06 21:21:42,556 [INFO] Thread-8 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:21:42,557 [INFO] Thread-8 (_run): SFTP session started, home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:21:42,564 [INFO] Thread-5 (handle_client): Connection closed from ('127.0.0.1', 17562)
+2026-07-06 21:23:23,042 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 21:23:23,044 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 21:23:23,045 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 21:24:33,433 [INFO] MainThread: Incoming connection from ('127.0.0.1', 39268)
+2026-07-06 21:24:33,436 [INFO] Thread-2: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 21:24:33,445 [INFO] Thread-2: User 'admin' authenticated successfully
+2026-07-06 21:24:33,445 [INFO] Thread-2: Auth granted (password).
+2026-07-06 21:24:33,447 [INFO] Thread-4 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:24:33,448 [INFO] Thread-4 (_run): SFTP session started, home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:24:33,463 [INFO] Thread-1 (handle_client): Connection closed from ('127.0.0.1', 39268)
+2026-07-06 21:29:49,216 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 21:29:49,217 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 21:29:49,217 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 21:30:07,125 [INFO] MainThread: Incoming connection from ('127.0.0.1', 33370)
+2026-07-06 21:30:07,127 [INFO] Thread-2: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 21:30:07,135 [INFO] Thread-2: User 'admin' authenticated successfully
+2026-07-06 21:30:07,136 [INFO] Thread-2: Auth granted (password).
+2026-07-06 21:30:07,137 [INFO] Thread-4 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:30:07,137 [INFO] Thread-4 (_run): SFTP session started, home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:30:07,185 [INFO] Thread-1 (handle_client): Connection closed from ('127.0.0.1', 33370)
+2026-07-06 21:31:18,634 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 21:31:18,636 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 21:31:18,637 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 21:34:39,299 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 21:34:39,300 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 21:34:39,300 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 21:35:02,640 [INFO] MainThread: Incoming connection from ('127.0.0.1', 42874)
+2026-07-06 21:35:02,644 [INFO] Thread-2: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 21:35:02,651 [INFO] Thread-2: User 'admin' authenticated successfully
+2026-07-06 21:35:02,651 [INFO] Thread-2: Auth granted (password).
+2026-07-06 21:35:02,653 [INFO] Thread-4 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:35:02,654 [INFO] Thread-4 (_run): SFTP session started, home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:35:02,659 [INFO] Thread-1 (handle_client): Connection closed from ('127.0.0.1', 42874)
+2026-07-06 21:37:44,974 [INFO] MainThread: Incoming connection from ('192.168.68.67', 31400)
+2026-07-06 21:37:44,976 [INFO] Thread-6: Connected (version 2.0, client paramiko_5.0.0)
+2026-07-06 21:37:44,983 [INFO] Thread-6: User 'admin' authenticated successfully
+2026-07-06 21:37:44,984 [INFO] Thread-6: Auth granted (password).
+2026-07-06 21:37:44,986 [INFO] Thread-8 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:37:44,987 [INFO] Thread-8 (_run): SFTP session started, home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 21:37:44,991 [ERROR] Thread-6: Socket exception: En etablerad anslutning avbröts av programvaran i värddatorn (10053)
+2026-07-06 21:37:44,992 [INFO] Thread-5 (handle_client): Connection closed from ('192.168.68.67', 31400)
+2026-07-06 21:39:51,888 [INFO] MainThread: Loaded host key from host_key_rsa
+2026-07-06 21:39:51,889 [INFO] MainThread: SFTP server listening on 0.0.0.0:2222
+2026-07-06 21:39:51,890 [INFO] MainThread: Configured users: admin, user1
+2026-07-06 23:08:45,039 [INFO] MainThread: Incoming connection from ('192.168.68.70', 59172)
+2026-07-06 23:08:45,057 [INFO] Thread-10: Connected (version 2.0, client OpenSSH_10.2p1)
+2026-07-06 23:08:51,641 [INFO] Thread-10: Auth rejected (none).
+2026-07-06 23:08:57,258 [INFO] Thread-10: User 'admin' authenticated successfully
+2026-07-06 23:08:57,259 [INFO] Thread-10: Auth granted (password).
+2026-07-06 23:08:57,284 [INFO] Thread-12 (_run): SFTP subsystem started for 'admin', home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-06 23:08:57,285 [INFO] Thread-12 (_run): SFTP session started, home=C:\Eget\PythonProjects\sftp-server\sftp-server\sftp_root\admin
+2026-07-07 00:53:43,745 [INFO] Thread-10: Disconnect (code 11): disconnected by user
+2026-07-07 00:53:43,747 [INFO] Thread-9 (handle_client): Connection closed from ('192.168.68.70', 59172)
